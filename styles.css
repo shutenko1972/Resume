@@ -1,0 +1,338 @@
+
+        /* CSS Variables for colors */
+        :root {
+            --main-bg-color: linear-gradient(135deg, #ffebee, #e3f2fd);
+            --container-bg-color: #ffffff;
+            --text-color: #333333;
+            --heading-color: #64b5f6;
+            --accent-color: #4db6ac;
+            --gradient-border: 5px solid #81d4fa;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: var(--main-bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: var(--container-bg-color);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+      h1 {
+           color: var(--heading-color);
+           text-align: center;
+           margin-bottom: 20px;
+         }
+
+          .text-18 {
+          font-size: 18px;
+         }
+
+          .text-16 {
+          font-size: 16px;
+         }
+
+         .text-14 {
+         font-size: 14px;
+         }
+
+            .left-align {
+            text-align: left;
+          }
+
+            .right-align {
+            text-align: right;
+          }
+
+        h2 {
+            color: var(--heading-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            color: var(--text-color);
+            line-height: 1.4;
+        }
+
+        .logo {
+            display: block;
+            max-width: 200px;
+            margin: 0 auto 20px;
+            border: var(--gradient-border);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
+        ul li:before {
+            content: '✓';
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+		
+        .custom-image {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+		
+		 .custom-image2 {
+        width: 500px;
+        height: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+		
+		/* Стилизация раздела опыта работы */
+   .experience {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+   /* Стилизация заголовка опыта работы */
+  .experience h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Стилизация деталей */
+.experience .details {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Стилизация списка обязанностей */
+.experience .responsibilities {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.experience .responsibilities li {
+    margin-bottom: 5px;
+}
+
+/* Анимация при наведении */
+.experience:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Стилизация раздела навыков */
+.skills {
+    font-family: 'Arial', sans-serif;
+    background-color: #e7f3fe;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилизация заголовка навыков */
+.skills h3 {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #66b2ff;
+    padding-bottom: 5px;
+}
+
+/* Стилизация списка навыков */
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 1em;
+    color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.skills ul li:last-child {
+    border-bottom: none;
+}
+
+/* Анимация при наведении */
+.skills:hover {
+    background-color: #d8ecf8;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Стилизация данных специалиста */
+.specialist {
+    font-family: 'Verdana', sans-serif;
+    background-color: #eff7e1;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Максимальная ширина для отступов */
+}
+
+/* Стилизация заголовка */
+.specialist h2 {
+    font-size: 1.8em;
+    color: #2f4f4f;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #8fbc8f;
+    padding-bottom: 8px;
+}
+
+/* Стилизация информации о специалисте */
+.specialist .info {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Стилизация заголовков секций */
+.specialist .section-title {
+    font-size: 1.4em;
+    color: #2f4f4f;
+    margin-top: 20px;
+    border-bottom: 2px solid #8fbc8f;
+    padding-bottom: 5px;
+}
+
+/* Стилизация списка навыков */
+.specialist .skills {
+    list-style-type: square;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.specialist .skills li {
+    margin-bottom: 5px;
+}
+
+/* Стилизация ссылки */
+.specialist a {
+    color: #2f4f4f;
+    text-decoration: none;
+}
+
+.specialist a:hover {
+    text-decoration: underline;
+}
+
+/* Анимация при наведении */
+.specialist:hover {
+    background-color: #e0eedb;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #4CAF50;
+}
+
+p {
+  line-height: 1.6;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
